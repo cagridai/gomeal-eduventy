@@ -1,0 +1,21 @@
+:root {
+    /*COLORS*/
+    --color-primary-black: #2E2E2E;
+    --color-secondary-orange: #F8B602;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+}
