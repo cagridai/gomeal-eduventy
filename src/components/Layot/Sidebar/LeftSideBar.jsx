@@ -1,7 +1,10 @@
-import styles from "./LeftSideBar.module.css";
+"use client";
+import { usePathname } from "next/navigation";
 import CustomButton from "@/components/CustomButton";
+import styles from "./LeftSideBar.module.css";
 
 export default function LeftSideBar() {
+  const pathname = usePathname();
   return (
     <div className={styles.container}>
       <div className={styles.sidebarMenu}>
@@ -12,33 +15,33 @@ export default function LeftSideBar() {
         <div className={styles.buttons}>
           <CustomButton
             text={"Home"}
-            href={"#"}
+            href={"/"}
             iconText={"home"}
-            style={"filled"}
+            style={pathname === "/" ? "filled" : "plane"}
           />
           <CustomButton
             text={"Food Order"}
-            href={"#"}
+            href={"/foodorder"}
             iconText={"foodorder"}
-            style={"plane"}
+            style={pathname === "/foodorder" ? "filled" : "plane"}
           />
           <CustomButton
             text={"Favorite"}
-            href={"#"}
+            href={"/favorites"}
             iconText={"favorites"}
-            style={"plane"}
+            style={pathname === "/favorites" ? "filled" : "plane"}
           />
           <CustomButton
             text={"Order History"}
-            href={"#"}
+            href={"/orderhistory"}
             iconText={"orderhistory"}
-            style={"plane"}
+            style={pathname === "/orderhistory" ? "filled" : "plane"}
           />
           <CustomButton
             text={"Settings"}
-            href={"#"}
+            href={"/settings"}
             iconText={"settings"}
-            style={"plane"}
+            style={pathname === "/settings" ? "filled" : "plane"}
           />
         </div>
       </div>

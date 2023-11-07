@@ -5,10 +5,8 @@ import Content from "@/components/Layot/content/content";
 
 export default function Home() {
   return (
-    <div className={"mainContainer"}>
-      <LeftSideBar />
+    <div>
       <Content />
-      <RightSideBar />
     </div>
   );
 }
