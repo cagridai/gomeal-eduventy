@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.form input[type="search"] {
+  width: 50rem;
+  height: 5rem;
+  padding: 0.4rem 6rem;
+  border: none;
+  border-radius: 1.2rem;
+}
+
+.form input[type="search"]::placeholder {
+  color: #a098ae;
+  font-weight: 400;
+}
+
+.icon {
+  fill: var(--color-secondary-orange);
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+
+.welcome {
+  font-size: 3rem;
+  font-weight: 700;
+}

@@ -1,21 +1,26 @@
 :root {
-    /*COLORS*/
-    --color-primary-black: #2E2E2E;
-    --color-secondary-orange: #F8B602;
-
+  /*COLORS*/
+  --color-primary-black: #2e2e2e;
+  --color-secondary-orange: #f8b602;
+  --color-content-background: #f5f5f5;
+  --color-white: #fff;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 .mainContainer {
-    display: flex;
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: 15fr 75fr 20fr;
+}
+
+.content {
+  background-color: var(--color-content-background);
 }
