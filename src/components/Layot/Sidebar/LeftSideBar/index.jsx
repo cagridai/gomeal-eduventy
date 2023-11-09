@@ -3,7 +3,7 @@ import { usePathname } from "next/navigation";
 import CustomButton from "@/components/CustomButton";
 import styles from "./LeftSideBar.module.css";
 
-export default function LeftSideBar() {
+export default function Index() {
   const pathname = usePathname();
   return (
     <div className={styles.container}>
@@ -16,31 +16,31 @@ export default function LeftSideBar() {
           <CustomButton
             text={"Home"}
             href={"/"}
-            iconText={"home"}
+            iconName={"home"}
             style={pathname === "/" ? "filled" : "plane"}
           />
           <CustomButton
             text={"Food Order"}
             href={"/foodorder"}
-            iconText={"foodorder"}
+            iconName={"foodorder"}
             style={pathname === "/foodorder" ? "filled" : "plane"}
           />
           <CustomButton
             text={"Favorite"}
             href={"/favorites"}
-            iconText={"favorites"}
+            iconName={"favorites"}
             style={pathname === "/favorites" ? "filled" : "plane"}
           />
           <CustomButton
             text={"Order History"}
             href={"/orderhistory"}
-            iconText={"orderhistory"}
+            iconName={"orderhistory"}
             style={pathname === "/orderhistory" ? "filled" : "plane"}
           />
           <CustomButton
             text={"Settings"}
             href={"/settings"}
-            iconText={"settings"}
+            iconName={"settings"}
             style={pathname === "/settings" ? "filled" : "plane"}
           />
         </div>

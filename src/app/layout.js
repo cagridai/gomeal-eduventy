@@ -1,7 +1,6 @@
+import { LeftSideBar, RightSideBar } from "@/components/Layot/Sidebar";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import LeftSideBar from "@/components/Layot/Sidebar/LeftSideBar";
-import RightSideBar from "@/components/Layot/Sidebar/RightSideBar";
 
 const poppins = Poppins({
   subsets: ["latin"],

@@ -1,0 +1,37 @@
+.container {
+  margin-top: 9rem;
+}
+
+.heading span {
+  color: var(--color-gray);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.addressHeading {
+  display: flex;
+  align-items: center;
+}
+
+.addressLocation {
+  color: var(--color-primary-black);
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-left: 0.8rem;
+}
+
+.addressHeading a {
+  margin-left: auto;
+}
+
+.addressOpen {
+  margin-top: 1rem;
+  display: block;
+  color: var(--color-gray);
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+}

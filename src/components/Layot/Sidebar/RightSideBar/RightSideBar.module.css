@@ -1,8 +1,9 @@
 .container {
-  width: 100%;
+  width: 90%;
   height: 100vh;
   position: sticky;
+  margin: 0 auto;
   top: 0;
   right: 0;
-  background-color: red;
+  background-color: var(--color-white);
 }

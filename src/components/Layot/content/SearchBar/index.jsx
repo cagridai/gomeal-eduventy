@@ -1,4 +1,4 @@
-import Magnify from "../../../public/icons/icon_magnifier.svg";
+import Magnify from "../../../../../public/icons/icon_magnifier.svg";
 import styles from "./SearchBar.module.css";
 
 export default function Index() {

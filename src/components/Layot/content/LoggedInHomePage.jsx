@@ -1,7 +1,7 @@
-import SearchBar from "@/components/SearchBar";
+import SearchBar from "src/components/Layot/content/SearchBar";
 import styles from "./LoggedInHomePage.module.css";
-import Banner from "@/components/Banner";
-import Category from "@/components/Category";
+import Banner from "src/components/Layot/content/Banner";
+import Category from "src/components/Layot/content/Category";
 export default function LoggedInHomePage() {
   return (
     <div className={styles.container}>
