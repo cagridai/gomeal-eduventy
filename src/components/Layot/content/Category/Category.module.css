@@ -1,11 +1,13 @@
 .container {
   width: 100%;
+  margin-bottom: 3rem;
 }
 
 .head {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 2.4rem;
 }
 
 .head span {
@@ -19,4 +21,9 @@
   font-size: 1.8rem;
   font-weight: 400;
   text-decoration: none;
+}
+
+.categories {
+  display: flex;
+  gap: 1.6rem;
 }

@@ -1,3 +1,4 @@
+import Provider from "@/redux/Provider";
 import { LeftSideBar, RightSideBar } from "@/components/Layot/Sidebar";
 import { Poppins } from "next/font/google";
 import "./globals.css";
@@ -16,9 +17,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppins.className} mainContainer`}>
-        <LeftSideBar />
-        <div className={"content"}>{children}</div>
-        <RightSideBar />
+        <Provider>
+          <LeftSideBar className={"leftSide"} />
+          <div className={"content"}>{children}</div>
+          <RightSideBar />
+        </Provider>
       </body>
     </html>
   );

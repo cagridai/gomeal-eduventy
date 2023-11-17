@@ -15,6 +15,10 @@ export default function CustomButton({ href, text, iconName, style }) {
         return styles.addressOrange;
       case "addressBlack":
         return styles.addressBlack;
+      case "checkout":
+        return styles.checkout;
+      case "coupon":
+        return styles.coupon;
     }
   };
 
@@ -28,15 +32,19 @@ export default function CustomButton({ href, text, iconName, style }) {
         return styles.addressOrangeText;
       case "addressBlack":
         return styles.addressBlackText;
+      case "checkout":
+        return styles.checkoutText;
+      case "coupon":
+        return styles.couponText;
     }
   };
 
   const svgFill = () => {
     switch (style) {
       case "filled":
-        return "#fff";
+        return "var(--color-white)";
       case "plane":
-        return "#A098AE";
+        return "var(--color-gray)";
       case "settings":
         return "var(--color-primary-black)";
     }
@@ -46,6 +54,7 @@ export default function CustomButton({ href, text, iconName, style }) {
     <Link href={href} className={btnStyle()}>
       {iconName && <Icon name={iconName} fill={svgFill()} />}
       {text && <span className={btnTextStyle()}>{text}</span>}
+      {style === "coupon" && <span className={styles.arrow}>&gt;</span>}
     </Link>
   );
 }

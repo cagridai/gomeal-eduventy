@@ -19,7 +19,7 @@
 }
 
 .form input[type="search"]::placeholder {
-  color: #a098ae;
+  color: var(--color-gray);
   font-weight: 400;
 }
 
@@ -27,7 +27,7 @@
   fill: var(--color-secondary-orange);
   position: absolute;
   top: 50%;
-  left: 5%;
+  left: 4%;
   transform: translateY(-50%);
 }
 

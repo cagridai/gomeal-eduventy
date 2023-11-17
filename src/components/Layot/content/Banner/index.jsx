@@ -13,7 +13,7 @@ export default function Banner() {
       </div>
       <div>
         <Image
-          src={"/icons/image_woman.png"}
+          src={"/assets/images/image_woman.png"}
           alt={"woman"}
           width={359}
           height={239}

@@ -14,7 +14,7 @@ export default function Index() {
       </div>
       <div className={styles.image}>
         <Image
-          src={"/icons/image_man.jpg"}
+          src={"/assets/images/image_man.jpg"}
           alt={"Index photo"}
           width={50}
           height={50}

@@ -1,4 +1,4 @@
-import Location from "/public/icons/icon_location.svg";
+import Location from "/public/assets/icons/icon_location.svg";
 import styles from "./Address.module.css";
 import CustomButton from "@/components/CustomButton";
 
