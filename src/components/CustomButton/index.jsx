@@ -19,6 +19,8 @@ export default function CustomButton({ href, text, iconName, style }) {
         return styles.checkout;
       case "coupon":
         return styles.coupon;
+      case "add":
+        return styles.plus;
     }
   };
 
@@ -55,6 +57,7 @@ export default function CustomButton({ href, text, iconName, style }) {
       {iconName && <Icon name={iconName} fill={svgFill()} />}
       {text && <span className={btnTextStyle()}>{text}</span>}
       {style === "coupon" && <span className={styles.arrow}>&gt;</span>}
+      {style === "add" && <span className={styles.plusText}>&plus;</span>}
     </Link>
   );
 }
