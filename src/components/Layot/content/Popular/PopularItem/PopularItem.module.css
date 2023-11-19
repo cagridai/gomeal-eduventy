@@ -1,5 +1,75 @@
 .container {
   width: 33.3rem;
   height: 36.3rem;
-  fill: var(--color-white, #fff);
+  background: var(--color-white, #fff);
+  border-radius: 8px;
+}
+
+.liked {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.6rem;
+}
+
+.discount {
+  width: 9.6rem;
+  height: 3.2rem;
+  border-radius: 0 0.8rem 0.8rem 0;
+  background: var(--color-red, #eb5757);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white, #fff);
+  font-size: 1.8rem;
+  font-weight: 400;
+  z-index: 1;
+}
+
+.hearth {
+  margin-right: 2rem;
+  fill: var(--color-red, #eb5757);
+}
+
+.foodImage {
+  width: 100%;
+}
+
+.foodImage img {
+  display: block;
+  margin: -1rem auto 2.4rem;
+  background: transparent;
+}
+
+.rating {
+  display: flex;
+  gap: 0.4rem;
+  margin-left: 3rem;
+}
+
+.itemMap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.4rem 3rem 0;
+}
+
+.itemDescription {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemDescription span:first-child {
+  color: var(--color-primary-black, #2e2e2e);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.itemDescription span:last-child {
+  color: var(--color-secondary-orange, #f8b602);
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.itemPrice {
+  color: var(--color-primary-black, #2e2e2e) !important;
 }

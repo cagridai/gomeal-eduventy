@@ -1,20 +1,10 @@
-import SearchBar from "src/components/Layot/content/SearchBar";
-import styles from "./LoggedInHomePage.module.css";
-import Banner from "src/components/Layot/content/Banner";
 import Category from "src/components/Layot/content/Category";
 import Popular from "@/components/Layot/content/Popular";
+import styles from "./LoggedInHomePage.module.css";
 export default function LoggedInHomePage() {
   return (
     <div className={styles.container}>
-      <main className={styles.main}>
-        <header className={styles.header}>
-          <SearchBar />
-        </header>
-
-        <div className={styles.banner}>
-          <Banner />
-        </div>
-
+      <main>
         <div>
           <Category />
         </div>
@@ -22,6 +12,8 @@ export default function LoggedInHomePage() {
         <div>
           <Popular />
         </div>
+
+        <div></div>
       </main>
     </div>
   );

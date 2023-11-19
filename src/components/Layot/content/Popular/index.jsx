@@ -25,7 +25,7 @@ export default function Popular() {
         <span>Popular</span>
         <Link href={"#"}>View all &gt;</Link>
       </div>
-      <div>{setPopularItems}</div>
+      <div className={styles.items}>{setPopularItems}</div>
     </div>
   );
 }

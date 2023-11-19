@@ -57,7 +57,7 @@ export default function CustomButton({ href, text, iconName, style }) {
       {iconName && <Icon name={iconName} fill={svgFill()} />}
       {text && <span className={btnTextStyle()}>{text}</span>}
       {style === "coupon" && <span className={styles.arrow}>&gt;</span>}
-      {style === "add" && <span className={styles.plusText}>&plus;</span>}
+      {style === "add" && <span className={styles.plusText}>+</span>}
     </Link>
   );
 }
