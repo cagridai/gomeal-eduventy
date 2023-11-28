@@ -1,8 +1,8 @@
 "use client";
 import { useSelector } from "react-redux";
 import Link from "next/link";
+import PopularItem from "./PopularItem";
 import styles from "./Popular.module.css";
-import PopularItem from "@/components/Layot/content/Popular/PopularItem";
 
 export default function Popular() {
   const popularState = useSelector((state) => state.popular);

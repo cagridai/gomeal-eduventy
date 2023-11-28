@@ -1,9 +1,9 @@
 import Provider from "@/redux/Provider";
-import { LeftSideBar, RightSideBar } from "@/components/Layot/Sidebar";
+import { LeftSideBar, RightSideBar } from "@/components/Layout/Sidebar";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import SearchBar from "@/components/Layot/content/SearchBar";
-import Banner from "@/components/Layot/content/Banner";
+import SearchBar from "@/components/Layout/content/SearchBar";
+import Banner from "@/components/Layout/content/Banner";
 
 const poppins = Poppins({
   subsets: ["latin"],

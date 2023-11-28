@@ -1,5 +1,6 @@
-import Category from "src/components/Layot/content/Category";
-import Popular from "@/components/Layot/content/Popular";
+import Category from "./Category";
+import Popular from "./Popular";
+import RecentOrder from "./RecentOrder";
 import styles from "./LoggedInHomePage.module.css";
 export default function LoggedInHomePage() {
   return (
@@ -13,7 +14,9 @@ export default function LoggedInHomePage() {
           <Popular />
         </div>
 
-        <div></div>
+        <div>
+          <RecentOrder />
+        </div>
       </main>
     </div>
   );

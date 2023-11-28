@@ -2,7 +2,7 @@ import Link from "next/link";
 import Icon from "@/components/Icons";
 import styles from "./CustomButton.module.css";
 
-export default function CustomButton({ href, text, iconName, style }) {
+export default function CustomButton({ href, text, iconName, style, onClick }) {
   const btnStyle = () => {
     switch (style) {
       case "filled":
@@ -53,7 +53,7 @@ export default function CustomButton({ href, text, iconName, style }) {
   };
 
   return (
-    <Link href={href} className={btnStyle()}>
+    <Link href={href} className={btnStyle()} onClick={onClick}>
       {iconName && <Icon name={iconName} fill={svgFill()} />}
       {text && <span className={btnTextStyle()}>{text}</span>}
       {style === "coupon" && <span className={styles.arrow}>&gt;</span>}

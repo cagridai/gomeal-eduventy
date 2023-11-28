@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+
+.head span {
+  color: var(--color-primary-black);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.head a {
+  color: var(--color-secondary-orange);
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}

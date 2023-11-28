@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import asd from "../../../public/temporary/fried-rice.png";
 
 const recentOrderSlice = createSlice({
   name: "recent",
@@ -7,7 +6,7 @@ const recentOrderSlice = createSlice({
     {
       id: 1,
       itemName: "Pizza",
-      image: "/temporary/pizza-2021-08-26-17-02-26-utc.png",
+      image: "/temporary/pizza2-2021-08-26-17-02-26-utc.png",
       price: 5.59,
       distance: 4.67,
       deliveredTime: 21,

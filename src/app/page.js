@@ -1,4 +1,4 @@
-import LoggedInHomePage from "@/components/Layot/content/LoggedInHomePage";
+import LoggedInHomePage from "@/components/Layout/content/LoggedInHomePage";
 export default function Home() {
   return (
     <div>

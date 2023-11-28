@@ -1,0 +1,50 @@
+.container {
+  width: 33.3rem;
+  height: 36.3rem;
+  background: var(--color-white, #fff);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.hearth {
+  position: absolute;
+  top: 3.2rem;
+  right: 3.2rem;
+  fill: #eb5757;
+}
+
+.itemImage {
+  width: 100%;
+  height: 20rem;
+  margin-top: 4rem;
+}
+
+.itemName {
+  color: var(--color-primary-black, #2e2e2e);
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.dollar {
+  color: var(--color-secondary-orange, #f8b602);
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.itemPrice {
+  color: var(--color-primary-black, #2e2e2e) !important;
+}
+
+.distance {
+  color: var(--color-gray, #a098ae);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
